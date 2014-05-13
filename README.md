@@ -12,7 +12,7 @@
 環境変数にアプリのIDとシークレットキーを入れてサーバーを起動する．
 
 ``
-$ export FACEBOOK_APP_ID="FacebookAppのID"
+$ export FACEBOOK_APP_ID="FacebookAppのID"  
 $ export FACEBOOK_APP_SECRET="FacebookAppのシークレットキー"
 ``
 
