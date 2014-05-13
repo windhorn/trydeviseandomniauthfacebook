@@ -13,6 +13,9 @@
 
 ``
 $ export FACEBOOK_APP_ID="FacebookAppのID"  
+``
+
+``
 $ export FACEBOOK_APP_SECRET="FacebookAppのシークレットキー"
 ``
 
