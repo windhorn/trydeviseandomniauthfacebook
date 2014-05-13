@@ -2,7 +2,8 @@
 <p>Find me in app/views/home/index.html.erb</p>
 <%= @profile['name'] %>
 
-<% @friends.each do |friend| %>
+<% @friends_info.each do |friend| %>
 	<p><%= friend['name'] %></p>
+		<%= image_tag friend['picture'] %>
 <% end %>
 
