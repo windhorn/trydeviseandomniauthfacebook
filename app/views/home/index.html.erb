@@ -2,7 +2,12 @@
 <p>Find me in app/views/home/index.html.erb</p>
 <%= @profile['name'] %>
 <br>
+<p><%= link_to 'ひとり',:controller => 'home', :action => 'index', :persons => 1 %></p>
+<p><%= link_to 'ふたり',:controller => 'home', :action => 'index', :persons => 2 %></p>
+<p><%= link_to 'さんにん',:controller => 'home', :action => 'index', :persons => 3 %></p>
+<p><%= link_to 'よにん',:controller => 'home', :action => 'index', :persons => 4 %></p>
 <br>
+
 <% @friends_info.each do |friend| %>
 	<p><%= friend['name'] %></p>
 		<%= image_tag friend['picture'] %>

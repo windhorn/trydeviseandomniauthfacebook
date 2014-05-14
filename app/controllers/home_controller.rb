@@ -8,8 +8,10 @@ class HomeController < ApplicationController
   	@profile = @graph.get_object('me')
   	@friends = @graph.get_connections('me', 'friends', { :locale => 'ja-jp' })	# このアプリを登録している友達を取得する．
     # パラメータから人数の数値を受け取る．
-    if params[:id]
-      friendnum = params[:id].to_i
+    if params[:persons]
+      friendnum = params[:persons].to_i
+    else
+      friendnum = 1
     end
   	@friends_info = []
     @friends.sort_by!{rand}   # 友達の情報が入っている配列をシャッフル
